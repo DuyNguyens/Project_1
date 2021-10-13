@@ -29,7 +29,6 @@ void setup() {
   position = new PVector(width/2, height/2);
   pickTarget();
   
-  food = loadImage("food.png");
   animeBackground = loadImage("animeBackground.jpg");
   
    for (int i=0; i<steves.length; i++) {
