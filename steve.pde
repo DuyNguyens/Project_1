@@ -102,14 +102,30 @@ if (mousePressed && (mouseButton == RIGHT)) { // right click will make the image
     image(faceCurrent, position.x, position.y);
   
     if (monkaW) {
-     noFill();
+    noFill();
     stroke(0, 255, 0);
-    rect(position.x, position.y, triggerDistance1*3, triggerDistance1*2);
-    rect(position.x, position.y, triggerDistance2*2, triggerDistance2*2);
+    if (mousePressed && (mouseButton == LEFT)){
+    rect(mouseX,mouseY, triggerDistance1*3, triggerDistance1*2);
+    }else{
+    rect(position.x,position.y, triggerDistance1*3, triggerDistance1*2);
+    }
+    if (mousePressed && (mouseButton == LEFT)){
+    rect(mouseX, mouseY, triggerDistance2*2, triggerDistance2*2);
+    }else{
+    rect(position.x,position.y, triggerDistance2*2, triggerDistance2*2);
+    }
+    if (mousePressed && (mouseButton == LEFT)){
+    line(target.x,target.y, mouseX,mouseY);
+    }else{
     line(target.x, target.y, position.x, position.y);
+    }
     stroke(255, 0, 0);
+    if (mousePressed && (mouseButton == LEFT)){
+    rect(mouseX,mouseY, 20, 20);
+    }else{
     rect(target.x, target.y, 10, 10);
     }
+  }
   }
   
   void run() {
