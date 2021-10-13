@@ -99,7 +99,11 @@ if (mousePressed && (mouseButton == RIGHT)) { // right click will make the image
     rectMode(CENTER);
     imageMode(CENTER);
   
+   if (mousePressed && (mouseButton == LEFT)){
+    image(faceCurrent, mouseX, mouseY);
+  } else {
     image(faceCurrent, position.x, position.y);
+  }
   
     if (monkaW) {
     noFill();
