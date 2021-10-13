@@ -1,3 +1,1 @@
-Left click will make the image move on its own
-Holding left click will make the image move accoring to your cursor
-Right click will make the image chase after food
+Left click will make our creature move randomly by its own, holding left click will let you control our creature. HOWEVER, if you don't move the creature to its desire spot in time, it will automatically hunting for food by itself. In order to stop this, you need to move our creature to its desire spot or simply left click again for the creature to start moving randomly. Right click will make the creature hunting for food by itself.
